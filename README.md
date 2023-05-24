@@ -1,3 +1,5 @@
+cat target.lst | xargs -n 1 -I {} python3 paramspider.py --domain {} --level high | sort -u > all_spiderparamters.txt
+
 api.cloud.say.rocks
 api.internal.kubernetes.say.rocks
 api.kubernetes.say.rocks
